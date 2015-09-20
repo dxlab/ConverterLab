@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="58dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="16dp"
+
+        android:padding="0dp">
+
+        <TextView
+            android:id="@+id/currencyTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/currencyImages"
+            android:textColor="@color/black_semi_transparent"
+            android:layout_alignParentTop="true"
+            android:text="Название валюты"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/currencyImages"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="72dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/curencyAskImage"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_weight="0.5"
+                android:text="22.1000"
+                android:gravity="center_vertical"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/curencyBidImage"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_weight="0.5"
+                android:text="23.0010"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="0dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/currencyValues"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:paddingRight="8dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/curencyAskText"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="0.5"
+                android:text="22.10"
+                android:gravity="center_vertical"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/curencyBidText"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="23.00"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ConverterLab</string>
+    <string name="action_search">Поиск</string>
+    <string name="search_hint">название банка</string>
+    <string name="title_main">Converter Lab</string>
+    <string name="organization_cursor"><![CDATA[
+    select _id,title,phone,address,c.name as city,r.name as region
+    from organization o, city c, region r
+    where o.city_id=c.id and r.id=o.region_id and upperTitle like ?
+    order by title
+    ]]>
+    </string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
