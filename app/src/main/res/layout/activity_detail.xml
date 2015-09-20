@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_above="@+id/addressText"
                     android:layout_alignParentRight="true"
-                    android:text="097 675 85"
+                    android:text="050 541 63"
                     android:autoLink="phone"
                     android:textSize="14sp" />
 
